@@ -17,10 +17,11 @@ setTimeout(() => {
 
     //comparazione dei due array 
     for ( i = 0; i < utentNumbers.length; i++ ) {
+        
         if (utentNumbers[i] === generatorNumbers[i]) {
-            console.log(utentNumbers[i] + ' hai indovinato');
+            console.log(utentNumbers[i] + ' hai indovinato questo numero');
         }else {
-            console.log(utentNumbers[i] + ' non hai indovinato');
+            console.log(utentNumbers[i] + ' non hai indovinato questo numero');
         } 
     }    
 
