@@ -12,10 +12,17 @@ setTimeout(() => {
     while (utentNumbers.length < 5) {
         i = parseInt(prompt('inserisci un numero'));
         utentNumbers.push(i);
-        console.log(utentNumbers);
     } 
-    let isEqual = utentNumbers.toString() === generatorNumbers.toString();
-    console.log(isEqual + ' i numeri sono uguali');
+    console.log(utentNumbers);
+
+    //comparazione dei due array 
+    for ( i = 0; i < utentNumbers.length; i++ ) {
+        if (utentNumbers[i] === generatorNumbers[i]) {
+            console.log(utentNumbers[i] + ' hai indovinato');
+        }else {
+            console.log(utentNumbers[i] + ' non hai indovinato');
+        } 
+    }    
 
 }, 5000)
  
